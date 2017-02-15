@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>Bootstrap 实例 - 简单的轮播（Carousel）插件</title>
+	<link rel="stylesheet" href="Bootstrap Css/bootstrap.min.css">
+	 <script src="script/jquery.min.js"></script>
+	<script src="script/framework-carousel-js"></script>
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner">
+		<div class="item active col-lg-6">
+			<img src="images/10.jpg" alt="First slide">
+		</div>
+		<div class="item col-lg-6">
+			<img src="images/12.jpg" alt="Second slide">
+		</div>
+		<div class="item col-lg-6">
+			<img src="images/14.jpg" alt="Third slide">
+		</div>
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+	<a class="carousel-control left" href="#myCarousel" 
+	   data-slide="prev"><</a>
+	<a class="carousel-control right" href="#myCarousel" 
+	   data-slide="next">></a>
+</div> 
+
+</body>
+</html>
