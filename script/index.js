@@ -14,12 +14,20 @@ $(function(){
 		$('.location .active').html($value);
 		//$('.active').attr($value);
 	});
-	$("ul li.list1").mouseover(function(){
-		$(".cate").css("display","block");
-	});
-	$("ul li.list1").mouseout(function(){
-	$(".cate").css("display","none");
-	});
+
+     $('.slide .news .first').mouseover(function(){
+     	//$(this).addClass('on');
+     },function(){
+        $('.news-item1').css('display','block');
+        $('.news-item2').css('display','none');
+        //$('.second').removeClass('on');
+     });
+     $('.slide .news .second').mouseover(function(){
+     	//$(this).addClass('on');
+     	$('.news-item1').css('display','none');
+     	$('.news-item2').css('display','block');
+     });
+
 	$('.nav').mouseover(function(){
 		$(this).css("width","140px");
 		$(this).css("background-color","#c81632");
