@@ -15,6 +15,13 @@ $(function(){
 		//$('.active').attr($value);
 	});
 
+	  $('.slide .news a').mouseover(function(){
+	  	$(this).addClass('set');
+	  });
+	  	  $('.slide .news a').mouseout(function(){
+	  	$(this).removeClass('set');
+	  });
+
      $('.slide .news .first').mouseover(function(){
      	//$(this).addClass('on');
      },function(){
@@ -26,6 +33,7 @@ $(function(){
      	//$(this).addClass('on');
      	$('.news-item1').css('display','none');
      	$('.news-item2').css('display','block');
+     	//window.console.log('www');
      });
 
 	$('.nav').mouseover(function(){

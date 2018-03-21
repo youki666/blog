@@ -62,6 +62,8 @@ img {
 }
 .header .container .location li:hover .dropdown-location {
 	display: block;
+	z-index: 999;
+	background: #ee5;
 }
 .dropdown-location {
 	position: absolute;
@@ -282,7 +284,9 @@ img {
 	margin-top: 20px;
 	height: 160px;
 	width: 200px;
-	
+}
+.set {
+	border-bottom: 2px solid #f10215;
 }
 .slide .news a {
 	display: inline-block;
@@ -315,6 +319,7 @@ img {
 	left: 10px;
 }
 
+
 .slide .news a:last-child:hover {
     color: #f10215;
 }
@@ -340,7 +345,6 @@ img {
 .activity a span {
 	font-size: 24px;
 	display: inline-block;
-
 }
 
 
